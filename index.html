@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>This is a harmless page</title>
+</head>
+
+<body>
+    <h2>You've been Hacked! Just go back.</h2>
+    <script>
+    if (window.opener) {
+    	  var str = "alert('You got hacked!!')"
+        opener.eval(str)
+    } else {
+        document.querySelector('h1').innerHTML = 'The previous tab is safe and intact. <code>window.opener</code> was <code>null</code>; mischief <em>not</em> managed!';
+    }
+    </script>
+</body>
+
+</html>
