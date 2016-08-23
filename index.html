@@ -10,8 +10,7 @@
     <h2>You've been Hacked! Just go back.</h2>
     <script>
     if (window.opener) {
-    	  var str = "alert('You got hacked!!')"
-        opener.eval(str)
+    	opener.location = "https://zxc0328.github.io/noopener-hack/hack.html"
     } else {
         document.querySelector('h1').innerHTML = 'The previous tab is safe and intact. <code>window.opener</code> was <code>null</code>; mischief <em>not</em> managed!';
     }
